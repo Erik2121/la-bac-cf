@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact|LA-BAC.CF</title>
+   </head>
+ <body>
+    <header>
+      <nav class="wrapper">  
+          <div class="menu">
+            <div class="logo"><a href="/index.html">la-bac.cf</a></div>
+            <div class="nav-items">
+            <a href="/autori/autori.html">Autori</a>
+            <a href="#">Despre noi</a>
+            <a href="#"><div class="bg-contact">Contact</div></a>
+            </div>
+            
+          </div>
+      </nav>
+    </header>
+    <main class="main-contact">
+        <div id="particles-js"></div>
+              <div class="cnt"  id="cnt">
+                  <h1 class="contact-us">Contact Us</h1>
+                  <input type="text" placeholder="Nume" class="nume" id="nume">
+                  <input type="text" placeholder="Mail" class="mail" id="mail">
+                  <input type="text" placeholder="Mesaj" class="mesaj" id="mesaj">
+                  <button class="submit-bg" id="submit">Submit</button>
+              </div>  
+       
+        <script src="js/particles.js/particles.js"></script>
+        <script src="js/particles.js/app.js"></script>
+        <script src="js/typed.js-master/lib/typed.js"></script>
+       
+     </main>
+    <footer>
+      <div class="wrapper  info">
+      <div>All rights reserved.</div>
+      <div>Copyright ©2021</div>
+      <div>Content Owner: LA-BAC.CF</div>
+      <div>Creat cu ❤️ in Oradea</div>
+    </div>
+    </footer>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+      import { getDatabase, ref, set,  } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+      const firebaseConfig = {
+          apiKey: "AIzaSyBmtKDi4B-_ZqwFnMMuCo0oY78nGesyzzk",
+          authDomain: "la-bac-cf.firebaseapp.com",
+          databaseURL: "https://la-bac-cf-default-rtdb.firebaseio.com",
+          projectId: "la-bac-cf",
+          storageBucket: "la-bac-cf.appspot.com",
+          messagingSenderId: "796993338796",
+          appId: "1:796993338796:web:d903152e606a7072d00e09",
+          measurementId: "G-2JXPF3ZHL6"
+          };
+              
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const database = getDatabase(app);
+              
+          submit.addEventListener('click',(e) => {
+          let nume = document.getElementById('nume').value;
+          let mail = document.getElementById('mail').value;
+          let mesaj = document.getElementById('mesaj').value;
+          set(ref(database, 'contacte-trimise/' + nume), {
+              
+          nume: nume,
+          mail: mail,
+          mesaj:mesaj   
+          }).then(() => {
+          if(nume.length && mail.length && mesaj.length>0)
+          {
+            alert('Mesajul tau a fost trimis');
+            document.getElementById("nume").value = "";
+             document.getElementById("mail").value = "";
+             document.getElementById("mesaj").value = "";
+          }
+          else
+          {
+            alert("Va rog completati toate campurile!");
+          }
+            });
+          
+          });
+
+    </script>
+   
+</body>
+</html>
