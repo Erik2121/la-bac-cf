@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+   </head>
+ <body>
+    <header>
+      <nav class="wrapper">  
+          <div class="menu">
+            <div class="logo"><a href="/index.html">la-bac.cf</a></div>
+            <div class="nav-items">
+            <a href="/autori/autori.html">Autori</a>
+            <a href="#">Despre noi</a>
+            <a href="contact.html"><div class="bg-contact">Contact</div></a>
+            </div>
+            
+          </div>
+      </nav>
+    </header>
+    <main>
+        <div id="particles-js"></div>
+          <div class="main-text wrapper">
+            
+             <h1>la-bac.cf: <span class="js-type"></span></h1>
+             <h2>Autori prezenti pe site: <span class="js-type-autori"></span> </h2>
+        </div>
+        <script src="js/particles.js/particles.js"></script>
+        <script src="js/particles.js/app.js"></script>
+        <script src="js/typed.js-master/lib/typed.js"></script>
+        <script>
+          let type=new Typed(".js-type",{
+          strings:["site-ul care te ajuta sa iei bacu la romana! sau nu...."],
+          typeSpeed:100,
+          backSpeed:100,
+          backDelay: 10000,
+          startDelay: 500,
+          loop:true
+          })
+          let type_autori=new Typed(".js-type-autori",{
+            strings:["Camil Petrescu" ,"C.Negrutzii","George Bacovia","George Calinsecu","Ioan Slavici","Ion Barbu",
+            "Ion Creanga","Ion Luca Caragiale","Ion Pilat","Liviu Rebreanu","Lucian Blaga","Mihai Eminescu","Mihail Sadoveamu",
+            "Mircea Eliade","Tudor Arghezi"],
+          typeSpeed:100,
+          backSpeed:150,
+          backDelay: 50,
+          startDelay: 8000,
+          loop:true
+          })
+
+        </script>
+     </main>
+   
+    
+    <footer>
+      <div class="wrapper  info">
+      <div>All rights reserved.</div>
+      <div>Copyright ©2021</div>
+      <div>Content Owner: LA-BAC.CF</div>
+      <div>Creat cu ❤️ in Oradea</div>
+    </div>
+    </footer>
+</body>
+</html>
