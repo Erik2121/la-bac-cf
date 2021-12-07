@@ -53,19 +53,19 @@ header {
 }
 main
 {
-    height: 2500px;
+    height: 2950px;
    
 }
 canvas{
     position : absolute; 
     
-    height:2500px;
+    height: 2900px;
    z-index:-1;
 }
 #particles-js {
     position : absolute;
     width:100%;
-    height:2500px;
+    height: 2950px;
     z-index:-1;
     background-color: black;
 }

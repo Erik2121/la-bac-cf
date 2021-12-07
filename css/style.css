@@ -173,4 +173,50 @@ footer{
     -ms-user-select: none;
     user-select: none;
     color: #cc0000;
-  }
+}
+.titlu-despre{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    color: #FFA630;
+    font-weight: 700;
+}
+.despre-p{
+    color:white;
+    font-size: 23px;
+    font-weight: 700;
+    padding:150px 0 0 20px;
+}
+.search{
+    width: 830px;
+    height: 49px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid #FFA630;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+input{
+    border: none;
+}
+.search-wrapper{
+    width: 850px;
+    margin: 90px auto 0 auto;
+
+   
+}
+.lista-autori{
+    color:white;
+    text-decoration: none; 
+    font-size: 14px; 
+    display: block; 
+    padding-top: 10px;
+    padding-left: 25px;
+
+}
+.lista-autori:hover{
+    color:#FFA630 ;
+    padding-left: 30px;
+}
