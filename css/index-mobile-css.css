@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@media (max-width: 800px)
+{
+    canvas{
+        position : absolute; 
+        
+        height:860px;
+       z-index:-1;
+    }
+    #particles-js {
+        position:absolute;
+        width:100%;
+        height:860px;
+        z-index:-1;
+        background-color: black;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .search{
+        width: 340px;
+        height: 49px;
+        background: rgba(255, 255, 255, 0.6);
+        border: 3px solid #FFA630;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    .search-wrapper{
+        width: 370px;
+        margin: 90px auto 0 auto;
+    
+       
+    }
+    .nav-items a {
+        margin-right: 20px;
+        font-size:14px ;
+    }
+    .logo{
+        margin-top: 3px;
+        font-weight: 700;
+        font-size: 18px;
+   } 
+   header{
+       height: 80px;
+   }
+   h1{
+       font-size: 25px;
+   }
+   h2{
+       font-size: 16px;
+       display: none;
+   }
+   .main-text{
+    padding-top: 5%;
+    height: 261px;
+    
+   }
+   .info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    }
+    footer{
+        height: 107px;
+    }
+    .cnt{
+        display: flex;
+        width: 289px;
+        height: 408px;
+        background: rgba(255, 255, 255,.7);
+        box-shadow: 4px 4px 3px 2px rgba(255, 166, 48, 0.25);
+        border-radius: 20px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+       .nume{
+        width: 214px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 3px solid #FFA630;
+        border-radius: 10px;
+        color: white;
+    }
+    .mail{
+        width: 214px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 3px solid #FFA630;
+        border-radius: 10px;
+        color: white;
+    }
+    .mesaj{
+        width: 214px;
+        height: 69px;
+        background: rgba(0, 0, 0, 0.2);;
+        border: 3px solid #FFA630;
+        border-radius: 10px;
+        color: white;
+    }
+    .submit-bg{
+        background: #FFA630;
+        border-radius: 50px;
+        height: 37px;
+        width: 172px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        border: none;
+    }
+
+
+}
