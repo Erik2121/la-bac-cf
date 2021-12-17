@@ -166,14 +166,14 @@ footer{
 ::placeholder{
     color:#314CB6 ;
 }
-/* .no-copy {
+.no-copy {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     color: #cc0000;
-} */
+}
 .titlu-despre{
     text-transform: uppercase;
     text-align: center;
